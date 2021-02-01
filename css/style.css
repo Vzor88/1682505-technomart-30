@@ -223,7 +223,7 @@ input[type=search]:hover ~ label:before{
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 0;
+  margin:0;
 }
 .products-item:nth-child(1){
   background-color: var(--basik-yellow);
@@ -273,10 +273,10 @@ input[type=search]:hover ~ label:before{
 .button-link{
   background-color: var(--basik-red);
 }
-.products-item .button-link:hover{
+.button-link:hover{
   background-color: var(--basik-special-red);
 }
-.products-item .button-link:active{
+.button-link:active{
   background-color: var(--basik-dark-red);
 }
 
@@ -361,6 +361,15 @@ input[type=search]:hover ~ label:before{
   font-size: 17px;
   line-height: 18px;
 }
+.popular-products-button{
+  display: none;
+  width: 220px;
+  height: 170px;
+}
+.popular-products-image{
+  width: 220px;
+  height: 170px;
+}
 .popular-products-item del{
   color:var(--basik-dim-gray);
   display: block;
@@ -421,6 +430,12 @@ input[type=search]:hover ~ label:before{
 }
 .button-buy:before{
   content: url("../img/icons/icon-cart.svg");
+}
+.popular-products-item:hover  .popular-products-image{
+  display:none;
+}
+.popular-products-item:hover  .popular-products-button{
+  display:block;
 }
 
 /** Popular manufactures **/
@@ -623,6 +638,11 @@ input[type=search]:hover ~ label:before{
   background-position: right top;
   border:none;
 }
+.button-submit{
+  border:none;
+  outline: none;
+}
+
 
 
 
