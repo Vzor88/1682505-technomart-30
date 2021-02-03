@@ -221,9 +221,9 @@ ul {
   line-height: 30px;
 }
 
-.header-contacts-phone:before {
-  content: url("../img/icons/tel.svg");
-  fill: var(--basik-gray);
+.header-contacts-phone {
+  background: url("../img/icons/tel.svg") no-repeat left center;
+  padding-left: 25px;
 }
 
 .header-contacts address {
@@ -248,8 +248,9 @@ ul {
   color: var(--basik-tru-gray);
 }
 
-.user-login:before {
-  content: url("../img/icons/icon-login.svg");
+.user-login {
+  background: url("../img/icons/icon-login.svg") no-repeat left center;
+  padding-left: 25px;
 }
 
 /** Main-navigation **/
@@ -501,7 +502,6 @@ ul {
 .button-buy,
 .button-bookmark {
   background: var(--basik-white);
-  border-radius: 2px;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -510,6 +510,9 @@ ul {
   color: var(--basik-white);
   border: none;
   cursor: pointer;
+  outline: none;
+  width: 135px;
+  height: 38px;
 }
 
 .button-buy:hover {
@@ -535,12 +538,11 @@ ul {
 }
 
 .button-buy {
-  background: var(--basik-green);
+  background:var(--basik-green) url("../img/icons/icon-cart.svg") no-repeat 30% center;
+  padding-left: 20px;
   box-shadow: inset 0 -3px 0 var(--basik-inner-green);
-}
-
-.button-buy:before {
-  content: url("../img/icons/icon-cart.svg");
+  border-radius: 2px;
+  margin: 38px 0 10px 0;
 }
 
 .popular-products-item:hover .popular-products-image {
@@ -762,4 +764,60 @@ ul {
 
 .instagram {
   background-image: url("../img/icons/icon-insta.svg");
+}
+
+/** Modal form **/
+
+.modal {
+  background-image: linear-gradient(to bottom, var(--basik-white), var(--basik-white) 70%, var(--basik-form-gray) 70%, var(--basik-form-gray));
+  border-top: 7px solid var(--basik-red);
+}
+
+.modal-form {
+  width: 620px;
+  height: 430px;
+}
+
+.form-user {
+  background-image: linear-gradient(to top bottom, var(--basik-white), var(--basik-red));
+}
+.form-user input,
+.form-user textarea {
+  border: 2px solid var(--basik-tru-gray);
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basik-dim-gray);
+}
+
+.form-user textarea {
+  resize: none;
+  overflow: auto;
+}
+
+.form-user label {
+  color: var(--basik-black);
+}
+
+.button-close {
+  display: block;
+  width: 21px;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+  background:var(--basik-white) url("../img/icons/icon-close.svg") no-repeat right top;
+  border: none;
+}
+
+.button-close-form {
+  top: -220px;
+  left: 580px;
+}
+
+.button-submit {
+  border: none;
+  outline: none;
 }
