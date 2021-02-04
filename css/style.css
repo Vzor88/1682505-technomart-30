@@ -343,6 +343,7 @@ ul {
 .slider-product-item {
   width: 620px;
   position: relative;
+  padding-bottom: 35px;
 }
 
 .slider-item-perforators {
@@ -362,16 +363,8 @@ ul {
   padding-top: 20px;
 }
 
-.button-link-slider{
-  position: absolute;
-  bottom:20px;
-  left:20px;
-  padding:10px 20px;
-}
-
 .slider-product-item p{
-  padding-bottom: 168px;
-  margin-bottom: 0;
+  padding-bottom: 90px;
 }
 
 .arrow {
@@ -452,7 +445,7 @@ ul {
 }
 
 .popular-products-item {
-  display: inline-block;
+
   border: 1px solid var(--basik-softdim-gray);
   background-color: var(--basik-white);
   box-sizing: border-box;
@@ -562,7 +555,6 @@ ul {
 }
 
 .popular-manufactures-item {
-  display: inline-block;
   width: 220px;
   height: 145px;
   box-sizing: border-box;
