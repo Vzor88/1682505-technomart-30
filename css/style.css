@@ -76,8 +76,11 @@ ul {
  }
 
 .hidden {
-  display: none;
-  margin: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .button-link {
@@ -97,6 +100,18 @@ ul {
   background-color: var(--basik-dark-red);
 }
 
+.new:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/new.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
 /* Header */
 /** Top-menu **/
 
@@ -113,13 +128,17 @@ ul {
   background-color: var(--basik-dark-red);
 }
 
+.search {
+  position: relative;
+}
+
 .search label:before {
   content: url("../img/icons/icon-search.svg");
   opacity: 0.3;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   top: 3px;
-  left: -195px;
+  left: 3px;
 }
 
 .search-input {
@@ -288,9 +307,8 @@ ul {
 
 .products-item {
   width: 300px;
-  height: 123px;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
+  padding: 30px 0 30px 20px;
 }
 
 .products-link {
@@ -311,23 +329,20 @@ ul {
 }
 
 .product-item-material {
-  background-color: var(--basik-yellow);
-  background-image: url("../img/icons/icon-material.svg");
+  background: var(--basik-yellow) url("../img/icons/icon-material.svg") no-repeat 70% center;
 }
 
 .product-item-instrument {
-  background-color: var(--basik-ligth-blue);
-  background-image: url("../img/icons/icon-instrument.svg");
+  background: var(--basik-ligth-blue) url("../img/icons/icon-instrument.svg") no-repeat 70% center;
 }
 
 .product-item-technics {
-  background-color: var(--basik-purpur);
-  background-image: url("../img/icons/icon-technika.svg");
+  background: var(--basik-purpur) url("../img/icons/icon-technika.svg") no-repeat 70% center;
 }
 
 .slider-product-item {
   width: 620px;
-  height: 266px;
+  position: relative;
 }
 
 .slider-item-perforators {
@@ -344,16 +359,30 @@ ul {
   line-height: 36px;
   margin: 0;
   text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.button-link-slider{
+  position: absolute;
+  bottom:20px;
+  left:20px;
+  padding:10px 20px;
+}
+
+.slider-product-item p{
+  padding-bottom: 168px;
+  margin-bottom: 0;
 }
 
 .arrow {
-  background-color: var(--basik-transparent-black);
-  position: relative;
-  top: 10px;
+  background: var(--basik-transparent-black) url("../img/icons/arrow-left.svg") no-repeat ;
+  position: absolute;
+  bottom: 120px;
   cursor: pointer;
   border: none;
   width: 22px;
   height: 40px;
+  top:50%;
 }
 
 .arrow:focus,
@@ -362,24 +391,22 @@ ul {
 }
 
 .slider-arrow-left {
-  background-image: url("../img/icons/arrow-left.svg");
   left: 10px;
+
 }
 
 .slider-arrow-right {
-  background-image: url("../img/icons/arrow-left.svg");
   transform: rotate(180deg);
-  left: 550px;
+  right: 10px;
 }
 
 .slider-dots {
   width: 50px;
-  height: 20px;
-  line-height: 10px;
+  height: 10px;
   text-align: center;
-  position: relative;
-  top: 90px;
-  left: 275px;
+  position: absolute;
+  bottom: 25px;
+  left: 45%;
 }
 
 .dots {
@@ -403,26 +430,11 @@ ul {
 }
 
 .products-item-discounts {
-  background-color: var(--basik-light-green);
-  background-image: url("../img/icons/icon-skidka.svg");
+  background: var(--basik-light-green) url("../img/icons/icon-skidka.svg") no-repeat 70% center;
 }
 
 .products-item-delivery {
-  background-color: var(--basik-extra-yellow);
-  background-image: url("../img/icons/icon-dostavka.svg");
-}
-
-.new-products:after {
-  content: "";
-  display: block;
-  position: relative;
-  top: -54px;
-  left: 230px;
-  background-image: url("../img/new.svg");
-  background-position: right top;
-  background-repeat: no-repeat;
-  width: 70px;
-  height: 70px;
+  background: var(--basik-extra-yellow) url("../img/icons/icon-dostavka.svg") no-repeat 70% center;
 }
 
 /** Popular products **/
@@ -445,36 +457,21 @@ ul {
   background-color: var(--basik-white);
   box-sizing: border-box;
   width: 220px;
-  height: 318px;
   text-align: center;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-}
-
-.new-products-card:after {
-  content: "";
-  display: block;
   position: relative;
-  top: -267px;
-  left: 149px;
-  background-image: url("../img/new.svg");
-  background-position: right top;
-  background-repeat: no-repeat;
-  width: 70px;
-  height: 70px;
 }
 
 .popular-products-button {
   display: none;
   width: 220px;
-  height: 170px;
 }
 
 .popular-products-image {
   width: 220px;
-  height: 170px;
 }
 
 .popular-products-item del {
@@ -538,7 +535,7 @@ ul {
 }
 
 .button-buy {
-  background:var(--basik-green) url("../img/icons/icon-cart.svg") no-repeat 30% center;
+  background: var(--basik-green) url("../img/icons/icon-cart.svg") no-repeat 30% center;
   padding-left: 20px;
   box-shadow: inset 0 -3px 0 var(--basik-inner-green);
   border-radius: 2px;
@@ -554,7 +551,7 @@ ul {
 }
 
 .popular-products-item:hover {
-  filter: drop-shadow(0px 4px 20px var(--basik-shadow-gray));
+  box-shadow: 0 4px 20px var(--basik-shadow-gray);
 }
 
 /** Popular manufactures **/
@@ -570,10 +567,6 @@ ul {
   height: 145px;
   box-sizing: border-box;
   border: 1px solid var(--basik-softdim-gray);
-}
-
-.popular-manufactures-item a {
-  display: block;
 }
 
 .popular-manufactures-item:hover {
@@ -609,7 +602,7 @@ ul {
 
 .servise-slider {
   width: 240px;
-  height: 183px;
+  position: relative;
 }
 
 .servise-slider:after {
@@ -618,20 +611,19 @@ ul {
   width: 10px;
   height: 279px;
   display: block;
-  position: relative;
-  top: -235px;
-  left: 230px;
+  position: absolute;
+  bottom: -50px;
+  right: 1px;
 }
 
 .servise-slider li {
   color: var(--basik-white);
   background-color: var(--basik-dark-gray);
   cursor: pointer;
-  height: 47px;
   line-height: 30px;
   font-weight: 700;
   font-size: 21px;
-  padding: 14px 0 0 30px;
+  padding: 15px 0 15px 30px;
 }
 
 .servise-slider .active-servise-item {
@@ -648,20 +640,16 @@ ul {
   background-color: var(--basik-extra-gray);
  }
 
-.slider-item {
-  background-repeat: no-repeat;
-}
-
 .slider-item-delivery {
-  background-image: url("../img/dostavka-service.png");
+  background: url("../img/dostavka-service.png") no-repeat;
 }
 
 .slider-item-guarantee {
-  background-image: url("../img/garantii-service.png");
+  background: url("../img/garantii-service.png") no-repeat;
 }
 
 .slider-item-credit {
-  background-image: url("../img/credit-service.png");
+  background: url("../img/credit-service.png") no-repeat;
 }
 
 /** Information **/
@@ -703,9 +691,8 @@ ul {
 .footer-contacts .logo {
   display: block;
   width: 220px;
-  height: 68px;
   text-align: center;
-  line-height: 80px;
+  padding: 20px 10px;
 }
 
 .footer-contacts address {
@@ -775,7 +762,7 @@ ul {
 
 .modal-form {
   width: 620px;
-  height: 430px;
+  position: relative;
 }
 
 .form-user {
@@ -793,11 +780,6 @@ ul {
   color: var(--basik-dim-gray);
 }
 
-.form-user textarea {
-  resize: none;
-  overflow: auto;
-}
-
 .form-user label {
   color: var(--basik-black);
 }
@@ -807,14 +789,14 @@ ul {
   width: 21px;
   height: 22px;
   cursor: pointer;
-  position: relative;
-  background:var(--basik-white) url("../img/icons/icon-close.svg") no-repeat right top;
+  position: absolute;
+  background: var(--basik-white) url("../img/icons/icon-close.svg") no-repeat right top;
   border: none;
 }
 
 .button-close-form {
-  top: -220px;
-  left: 580px;
+  top: 10px;
+  right: 10px;
 }
 
 .button-submit {
