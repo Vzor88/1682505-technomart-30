@@ -85,7 +85,7 @@ ul {
 
 .button-link {
   background-color: var(--basik-red);
-  color: white;
+  color: var(--basik-white);
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -311,7 +311,7 @@ ul {
 }
 
 .products-link {
-  color: white;
+  color: var(--basik-white);
   font-size: 14px;
   line-height: 18px;
   text-align: center;
