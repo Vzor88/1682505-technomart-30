@@ -73,7 +73,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
- }
+}
 
 .hidden {
   position: absolute;
@@ -291,7 +291,6 @@ ul {
 }
 
 .site-navigation li {
-  display: inline-block;
   padding: 16px 28px 20px 28px;
 }
 
@@ -344,6 +343,7 @@ ul {
   width: 620px;
   position: relative;
   padding-bottom: 35px;
+  background-size: cover;
 }
 
 .slider-item-perforators {
@@ -375,7 +375,7 @@ ul {
   border: none;
   width: 22px;
   height: 40px;
-  top:50%;
+  top: 45%;
 }
 
 .arrow:focus,
@@ -445,10 +445,8 @@ ul {
 }
 
 .popular-products-item {
-
   border: 1px solid var(--basik-softdim-gray);
   background-color: var(--basik-white);
-  box-sizing: border-box;
   width: 220px;
   text-align: center;
   font-family: "PT Sans", Arial, sans-serif;
@@ -456,11 +454,6 @@ ul {
   font-size: 17px;
   line-height: 18px;
   position: relative;
-}
-
-.popular-products-button {
-  display: none;
-  width: 220px;
 }
 
 .popular-products-image {
@@ -535,12 +528,25 @@ ul {
   margin: 38px 0 10px 0;
 }
 
+.popular-products-button {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  margin: -1px;
+}
+
 .popular-products-item:hover .popular-products-image {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  margin: -1px;
 }
 
 .popular-products-item:hover .popular-products-button {
-  display: block;
+  width: 220px;
+  opacity: 1;
+  clip: auto;
+  position: static;
 }
 
 .popular-products-item:hover {
@@ -630,7 +636,7 @@ ul {
 
 .servise-slider .no-active-servise-item:hover {
   background-color: var(--basik-extra-gray);
- }
+}
 
 .slider-item-delivery {
   background: url("../img/dostavka-service.png") no-repeat;
@@ -763,7 +769,6 @@ ul {
 .form-user input,
 .form-user textarea {
   border: 2px solid var(--basik-tru-gray);
-  box-sizing: border-box;
   border-radius: 2px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
@@ -794,4 +799,5 @@ ul {
 .button-submit {
   border: none;
   outline: none;
+  cursor: pointer;
 }
