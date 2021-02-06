@@ -159,24 +159,24 @@ ul {
   font-weight: 400;
 }
 .header-bookmark,
-.header-cart{
+.header-cart {
   margin-left: 25px;
 }
 
 .header-bookmark:before,
-.header-cart:before{
+.header-cart:before {
   opacity: 0.3;
   position: absolute;
 }
 
 .header-bookmark:before {
   content: url("../img/icons/icon-bookmark.svg");
-  left:10px;
+  left: 10px;
 }
 
 .header-cart:before {
   content: url("../img/icons/icon-cart.svg");
-  left:115px;
+  left: 115px;
 }
 
 .full-cart {
@@ -372,12 +372,12 @@ ul {
   padding-top: 20px;
 }
 
-.slider-product-item p{
+.slider-product-item p {
   padding-bottom: 90px;
 }
 
 .arrow {
-  background: var(--basik-transparent-black) url("../img/icons/arrow-left.svg") no-repeat ;
+  background: var(--basik-transparent-black) url("../img/icons/arrow-left.svg") no-repeat;
   position: absolute;
   bottom: 120px;
   cursor: pointer;
@@ -773,6 +773,7 @@ ul {
 .form-user {
   background-image: linear-gradient(to top bottom, var(--basik-white), var(--basik-red));
 }
+
 .form-user input,
 .form-user textarea {
   border: 2px solid var(--basik-tru-gray);
