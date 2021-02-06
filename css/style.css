@@ -158,17 +158,25 @@ ul {
   font-family: inherit;
   font-weight: 400;
 }
+.header-bookmark,
+.header-cart{
+  margin-left: 25px;
+}
+
+.header-bookmark:before,
+.header-cart:before{
+  opacity: 0.3;
+  position: absolute;
+}
 
 .header-bookmark:before {
   content: url("../img/icons/icon-bookmark.svg");
-  background-color: var(--basik-extra-gray);
-  opacity: 0.3;
+  left:10px;
 }
 
 .header-cart:before {
   content: url("../img/icons/icon-cart.svg");
-  background-color: var(--basik-extra-gray);
-  opacity: 0.3;
+  left:115px;
 }
 
 .full-cart {
