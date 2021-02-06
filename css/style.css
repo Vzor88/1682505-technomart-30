@@ -887,12 +887,12 @@ ul {
   padding: 30px;
 }
 
-.all-filters {
-  width: 220px;
-}
-
 .form-filters input {
   cursor: pointer;
+}
+
+.form-filters {
+  width: 220px;
 }
 
 .filters {
@@ -908,6 +908,7 @@ ul {
   background-color: var(--basik-sand-yellow);
   font-weight: 400;
   padding: 10px 0 10px 18px;
+  width: 200px;
 }
 
 .filters-options {
