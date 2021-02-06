@@ -1065,6 +1065,18 @@ ul {
   cursor: pointer;
 }
 
+.sort-up {
+  fill:var(--basik-red);
+}
+
+.sort-down {
+  fill:var(--basik-tru-gray);
+}
+
+.sort-dir svg:hover {
+  fill:var(--basik-black);
+}
+
 /**  Pagination  **/
 
 .pagination {
