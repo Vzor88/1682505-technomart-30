@@ -105,9 +105,7 @@ ul {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url("../img/new.svg");
-  background-position: right top;
-  background-repeat: no-repeat;
+  background: url("../img/new.svg") no-repeat right top;
   width: 70px;
   height: 70px;
 }
@@ -132,12 +130,13 @@ ul {
   position: relative;
 }
 
-.search label:before {
-  content: url("../img/icons/icon-search.svg");
+.search label {
+  background: var(--basik-extra-gray) url("../img/icons/icon-search.svg") no-repeat;
+  width: 17px;
+  height: 17px;
   opacity: 0.3;
-  background-repeat: no-repeat;
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 3px;
 }
 
@@ -162,11 +161,13 @@ ul {
 
 .header-bookmark:before {
   content: url("../img/icons/icon-bookmark.svg");
+  background-color: var(--basik-extra-gray);
   opacity: 0.3;
 }
 
 .header-cart:before {
   content: url("../img/icons/icon-cart.svg");
+  background-color: var(--basik-extra-gray);
   opacity: 0.3;
 }
 
@@ -181,7 +182,7 @@ ul {
 
 .header-cart:hover:before,
 .header-bookmark:hover:before,
-.search label:hover:before {
+.search label:hover {
   opacity: 1;
 }
 
@@ -204,11 +205,11 @@ ul {
   background-color: var(--basik-white);
 }
 
-.search-input:focus ~ label:before {
-  content: url("../img/icons/icon-search-red.svg");
+.search-input:focus ~ label {
+  background: var(--basik-white) url("../img/icons/icon-search-red.svg") no-repeat;
 }
 
-.search-input:hover ~ label:before {
+.search-input:hover ~ label {
   opacity: 1;
   cursor: pointer;
 }
@@ -347,11 +348,11 @@ ul {
 }
 
 .slider-item-perforators {
-  background-image: url("../img/perforator.jpg");
+  background: var(--basik-white) url("../img/perforator.jpg") no-repeat;
 }
 
 .slider-item-drills {
-  background-image: url("../img/drelli.jpg");
+  background: var(--basik-white) url("../img/drelli.jpg") no-repeat;
 }
 
 .slider-product-item h3 {
@@ -385,7 +386,6 @@ ul {
 
 .slider-arrow-left {
   left: 10px;
-
 }
 
 .slider-arrow-right {
@@ -563,7 +563,6 @@ ul {
 .popular-manufactures-item {
   width: 220px;
   height: 145px;
-  box-sizing: border-box;
   border: 1px solid var(--basik-softdim-gray);
 }
 
@@ -639,15 +638,15 @@ ul {
 }
 
 .slider-item-delivery {
-  background: url("../img/dostavka-service.png") no-repeat;
+  background: var(--basik-light-gray) url("../img/dostavka-service.png") no-repeat;
 }
 
 .slider-item-guarantee {
-  background: url("../img/garantii-service.png") no-repeat;
+  background: var(--basik-light-gray) url("../img/garantii-service.png") no-repeat;
 }
 
 .slider-item-credit {
-  background: url("../img/credit-service.png") no-repeat;
+  background: var(--basik-light-gray) url("../img/credit-service.png") no-repeat;
 }
 
 /** Information **/
