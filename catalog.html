@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header catalog-header">
     <section class="top-menu">
-      <div class="container">
+      <div class="container container-top-menu">
         <h2 class="hidden">Меню Техномарта</h2>
         <a class="logo">
           <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазинa Техномарт">
@@ -31,13 +31,13 @@
       </div>
     </section>
     <section class="header-info">
-      <div class="container">
+      <div class="container container-header-info">
         <h1 class="title">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
         <div class="header-contacts">
           <a class="header-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <address>г.Санкт-Петербург,ул. Б.Конюшенная,д.19/8</address>
         </div>
-        <div class="user">
+        <div class="user user-catalog-page">
           <a href="#" class="user-fullname">Равшан Джамшутович</a>
           <div class="user-cabinet">
             <a href="#" class="user-order">Мои заказы</a>
@@ -58,7 +58,7 @@
       </div>
     </section>
   </header>
-  <main>
+  <main class="page-catalog">
     <div class="container">
       <ul class="breadcrumbs">
         <li><a class="link-home" href="index.html"></a></li>
@@ -77,6 +77,7 @@
               <label for="filter-price"></label>
               <input class="filter-number" type="number" name="min_price" id="min-price" min="0" max="40000" step="1" value="0">
               <label for="min-price"></label>
+              <p class="dash">-</p>
               <input class="filter-number max-number" type="number" name="max-price" id="max-price" min="0" max="40000" step="1" value="30000">
               <label for="max-price"></label>
             </fieldset>
