@@ -73,8 +73,10 @@
           <form class="form-filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-price">
               <legend class="filters-options filters-options-price">Цена:</legend>
-              <input class="range-price" type="range" id="filter-price" name="price" min="0" max="40000" step="1">
-              <label for="filter-price"></label>
+              <div class="container-range">
+                <input class="range-price" type="range" id="filter-price" name="price" min="0" max="40000" step="1">
+                <label for="filter-price"></label>
+              </div>
               <input class="filter-number" type="number" name="min_price" id="min-price" min="0" max="40000" step="1" value="0">
               <label for="min-price"></label>
               <p class="dash">-</p>
