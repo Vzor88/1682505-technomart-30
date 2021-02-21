@@ -247,6 +247,10 @@ img {
   margin:0 0 0 30px;
 }
 
+.header-contacts {
+  width: 270px;
+}
+
 .header-contacts-phone {
   display: block;
   color: var(--basik-red);
@@ -261,25 +265,38 @@ img {
   color: var(--basik-dark-gray);
   font-size: 14px;
   font-style: normal;
+  text-align: center;
 }
 
 .user {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  width: 299px;
+  width: 100%;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .user-catalog-page {
   flex-wrap: wrap;
+  width: 299px;
 }
 
-.user a {
-  background-color: var(--basik-white);
-  color: var(--basik-black);
-  font-size: 21px;
-  line-height: 21px;
-  padding: 12px 24px;
+.user-cabinet,
+.user-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.user-inner {
+  background: var(--basik-white);
+  margin-bottom: 7px;
+}
+
+.user-cabinet a {
+  padding: 0 24px;
 }
 
 .user .user-login {
@@ -294,6 +311,12 @@ img {
   color: var(--basik-tru-gray);
 }
 
+.user .user-fullname {
+  display: block;
+  padding: 12px 0;
+  color: var(--basik-black);
+}
+
 .user .user-order,
 .user .personal-account {
   background-color: var(--basik-lightdim-gray);
@@ -302,19 +325,13 @@ img {
   line-height: 18px;
 }
 
-.personal-account {
-  padding-left: 40px;
-}
-
-.user .user-fullname {
-  display: block;
-  padding: 12px 56px;
-}
-
-.user-cabinet {
-  display: flex;
-  justify-content: space-around;
-  width: 299px;
+.point {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--basik-dark-gray);
+  line-height: 25px;
+  align-self: center;
 }
 
 /** Main-navigation **/
@@ -470,14 +487,17 @@ img {
   margin: 0;
 }
 
-.popular-products-list {
+.card-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.popular-list-card {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 70px;
 }
 
-.popular-products-item {
+.product-card {
   width: 220px;
   background-color: var(--basik-white);
   border: 1px solid var(--basik-softdim-gray);
@@ -490,31 +510,30 @@ img {
   padding-bottom: 21px;
 }
 
-.popular-products-image {
-  width: 220px;
+.product-card-image {
   height: 170px;
   position: relative;
 }
 
-.popular-products-image img {
+.product-card-image img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.popular-products-item del {
+.product-card-item del {
   display: block;
   color: var(--basik-dim-gray);
 }
 
-.products-item-link {
+.product-card-link {
   font-size: 18px;
   line-height: 20px;
   color: var(--basik-black);
 }
 
-.products-item-price {
+.product-card-price {
   display: block;
   width: 141px;
   background-image: url("../img/icons/red-button.svg");
@@ -922,6 +941,7 @@ img {
 
 .main-part-catalog {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 59px;
 }
 
@@ -933,7 +953,14 @@ img {
 
 .breadcrumbs a {
   color: var(--basik-black);
+}
+
+.breadcrumbs li {
   margin-right: 40px;
+}
+
+.breadcrumbs li:last-child {
+  margin: 0;
 }
 
 .breadcrumbs {
@@ -970,7 +997,6 @@ img {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-right: 20px;
 }
 
 .filters h3 {
@@ -1004,7 +1030,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   border: none;
-  padding: 0;
+  padding: 0 0 25px 0;
   margin: 0;
 }
 
@@ -1023,13 +1049,9 @@ img {
   width: 29px;
   color: var(--basik-tru-dark);
   font-size: 16px;
-  line-height: 18px;
+  line-height: 36px;
   text-align: center;
-  margin-top: 10px;
-}
-
-.max-number {
-  margin-bottom: 25px;
+  margin: 0;
 }
 
 .filter-number::-webkit-outer-spin-button,
@@ -1068,7 +1090,7 @@ img {
 }
 
 .result-filter {
-  width: 218px;
+  width: 100%;
   border: 1px solid var(--basik-backgraund-gray);
   background-color: var(--basik-white);
   font-size: 13px;
@@ -1088,8 +1110,12 @@ img {
 
 .sort-options {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-grow: 1;
+}
+
+.sort-type {
+  margin: 0 70px 0 65px;
 }
 
 .sort h3 {
@@ -1120,11 +1146,11 @@ img {
 
 /**  catalog-card **/
 
-.catalog-card {
+.catalog-box {
   margin-bottom: 70px;
 }
 
-.catalog-card-list {
+.catalog-list-card {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
 }
