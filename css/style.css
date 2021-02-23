@@ -1257,12 +1257,18 @@ img {
 }
 
 .modal-map {
-  display: block;
-  width: 941px;
+  width: 943px;
+  height: 441px;
+  overflow: hidden;
+}
+
+.container-modal-map {
+  height: 480px;
+  width: 968px;
 }
 
 .container-modal-map img {
-  height: 441px;
+  object-position: -13px -20px;
 }
 
 .form-user {
