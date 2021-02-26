@@ -187,6 +187,7 @@ img {
 .search {
   display: flex;
   width: 270px;
+  align-self: center;
   position: relative;
 }
 
@@ -196,7 +197,7 @@ img {
 
 .search-icon {
   position: absolute;
-  top: 12px;
+  top: 4px;
   left: 17px;
   opacity: 0.3;
 }
@@ -247,7 +248,7 @@ img {
 .header-bookmark:before {
   content: url("../img/icons/icon-bookmark.svg");
   top: 12px;
-  left: 20px;
+  left: 18px;
 }
 
 .header-cart:before {
@@ -263,7 +264,7 @@ img {
 
 .header-bookmark {
   width: 134px;
-  padding: 11px 0 0 17px;
+  padding: 10px 0 0 17px;
   margin-right: 12px;
 }
 
@@ -729,7 +730,6 @@ img {
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: -0.15px;
   margin: 0;
 }
 
@@ -1882,7 +1882,7 @@ img {
   margin: 0;
 }
 
-.bosch-bfg-2000 .product-card-link {
+.link-not-del {
   margin-bottom: 40px;
 }
 
