@@ -1336,17 +1336,11 @@ img {
 
 .modal-map {
   width: 943px;
-  height: 441px;
-  overflow: hidden;
+  height: 442px;
 }
 
-.container-modal-map {
-  height: 480px;
-  width: 968px;
-}
-
-.container-modal-map img {
-  object-position: -13px -20px;
+.modal-map iframe {
+  border: none;
 }
 
 .form-user {
@@ -1411,6 +1405,7 @@ img {
   width: 21px;
   height: 21px;
   border: none;
+  cursor: pointer;
 }
 
 .button-close-map {
