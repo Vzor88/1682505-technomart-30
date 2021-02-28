@@ -1726,9 +1726,9 @@ img {
   top: -2px;
   background-image: url("../img/icons/checkbox-off.svg");
   background-repeat: no-repeat;
-  opacity: 0.7;
-  width: 25px;
+  width: 27px;
   height: 23px;
+  opacity: 0.7;
 }
 
 .filter-radio + label:before {
@@ -1740,6 +1740,7 @@ img {
   height: 17px;
   border-radius: 50%;
   border: 4px solid var(--basik-tru-gray);
+  opacity: 0.7;
 }
 
 .filter-radio:hover + label:before {
@@ -1755,20 +1756,20 @@ img {
   color: var(--basik-disabled-gray);
 }
 
-.filter-checkbox:checked + label:after {
+.filter-checkbox:checked + label:before {
   content: "";
   position: absolute;
   left: -35px;
   top: -2px;
   background-image: url("../img/icons/checkbox-on.svg");
   background-repeat: no-repeat;
-  width: 25px;
+  width: 27px;
   height: 23px;
   opacity: 0.7;
 }
 
 .filter-checkbox:hover + label:before,
-.filter-checkbox:checked:hover + label:after {
+.filter-checkbox:checked:hover + label:before {
    opacity: 1;
 }
 
@@ -1786,6 +1787,7 @@ img {
   border-radius: 50%;
   background-color: var(--basik-tru-gray);
   position: absolute;
+  opacity: 0.7;
 }
 
 .filter-radio:checked:hover + label:after {
