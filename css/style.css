@@ -550,7 +550,7 @@ img {
 
 .icon-fullname {
   position: absolute;
-  top: 10px;
+  top: 26%;
   left: 15px;
 }
 
@@ -873,7 +873,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  padding:0 15px 21px;
+  padding: 0 15px 21px;
   position: relative;
 }
 
@@ -1622,9 +1622,8 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: center;
   color: var(--basik-black);
-  padding: 20px 0 20px 0;
+  padding: 20px 0 20px 175px;
   margin-bottom: 90px;
   margin-top: 0;
   background: var(--basik-transparent-black) url("../img/icons/icon-mark.svg") no-repeat 81px center;
