@@ -2106,6 +2106,16 @@ img {
   padding: 10px 0;
 }
 
+.result-filter:focus,
+.result-filter:hover {
+  border:1px solid var(--basik-black);
+}
+
+.result-filter:active {
+  box-shadow: 3px 3px solid var(--basik-red);
+  opacity: 0.4;
+}
+
 .sort {
   display: -webkit-box;
   display: -ms-flexbox;
