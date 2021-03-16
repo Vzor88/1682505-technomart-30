@@ -1057,7 +1057,7 @@ img {
 }
 
 .product-card:hover,
-.product-card:focus-within {       /* Не уверен в этом псевдоклассе, столи ли использовать его? */
+.product-card:focus-within {
   -webkit-box-shadow: 0 4px 20px var(--basik-shadow-gray);
   box-shadow: 0 4px 20px var(--basik-shadow-gray);
 }
@@ -1805,6 +1805,7 @@ img {
 .breadcrumbs li:first-child:before {
   display: none;
 }
+
 /** Filters **/
 
 .subtitle {
@@ -2076,7 +2077,7 @@ img {
   border: 4px solid var(--basik-super-gray);
 }
 
-.filter-radio:checked:hover + .filter-radio-label:after
+.filter-radio:checked:hover + .filter-radio-label:after,
 .filter-radio:checked:focus + .filter-radio-label:before {
   background-color: var(--basik-super-gray);
 }
