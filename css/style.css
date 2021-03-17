@@ -1759,7 +1759,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 0;
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
 }
 
 .breadcrumbs a {
@@ -1787,6 +1787,7 @@ img {
   width: 14px;
   height: 17px;
   display: inline-block;
+  vertical-align: top;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1884,7 +1885,7 @@ img {
   background-color: var(--basik-light-white);
   border-radius: 50%;
   position: absolute;
-  top: 29px;
+  top: 25px;
   -webkit-box-shadow: 0 2px 1px 0 var(--basik-shadow-white);
   box-shadow: 0 2px 1px 0 var(--basik-shadow-white);
   cursor: pointer;
@@ -2115,6 +2116,7 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   padding: 10px 0;
+  color: var(--basik-black);
 }
 
 .result-filter:focus,
